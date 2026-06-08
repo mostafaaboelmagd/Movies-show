@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.signup-card {
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.form-control {
+    background-color: #262626;
+    border: 1px solid #333;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background-color: #2f2f2f;
+    color: white;
+    border-color: #e50914;
+    box-shadow: none;
+}
+
+.btn-login {
+    background-color: #e50000;
+    border: none;
+    font-weight: 600;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ff0a16;
+}
+
+.btn-google {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+    background-color: #e6e6e6;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #333;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.logo-img {
+    max-width: 160px;
+    margin-bottom: 30px;
+}
+
+
+
+/* responsive */
+@media (max-width: 767.98px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 30px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .signup-card {
+        padding: 30px 20px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-img {
+        max-width: 130px;
+        margin-bottom: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .btn-login,
+    .btn-google {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .divider {
+        margin: 15px 0;
+        font-size: 13px;
+    }
+}

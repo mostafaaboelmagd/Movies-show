@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - StreamVibe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./Styles/login.css">
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center px-3">
+        <div class="login-card">
+            <div class="text-center">
+
+                <img src="./images/Logo.png" alt="Logo" class="logo-img">
+                <h2 class="h4 fw-bold mb-2">Welcome Back</h2>
+                <p class="text-secondary small mb-4">Please enter your details</p>
+            </div>
+
+            <a href="./google-ui.html" style="text-decoration: none;">
+                <button class="btn btn-google w-100 mb-3">
+                    <img src="./images/devicon_google.png" width="20" alt="Google">
+                    Sign in with Google
+                </button>
+            </a>
+
+            <div class="divider">or</div>
+
+            <form>
+                <div class="mb-3">
+                    <label class="form-label small text-secondary">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label small text-secondary">Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••">
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label small" for="remember">Remember me</label>
+                    </div>
+                    <a href="./forgot-password.html" class="text-danger small text-decoration-none">Forgot password?</a>
+                </div>
+
+                <a href="./index.html" <button type="submit" class="btn btn-login btn-danger w-100 mb-3">Sign In</button>
+                    </a>
+            </form>
+
+            <p class="text-center text-secondary small mt-3">
+                Don't have an account? <a href="./signup.html" class="text-white text-decoration-none fw-bold">Sign up
+                    for free</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
